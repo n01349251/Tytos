@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/air-reg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Air Pollution Registration</title>
+
+    <!-- group -->
+    <!--Fvicon icon-->
+    <link rel="icon" href="./images/worldwide.png">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--Data Aos Libraries-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <!-- go to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- jumbotron -->
+    <div class="jumbotron">
+        <div class="title">
+            <h1 class="display-4">Fight Against Air Pollution With Us</h1>
+            <p class="lead ">Together We Can Save</p>
+        </div>
+    </div>
+
+    <!-- mine -->
+    <div id="page-container">
+        <div id="left-part">
+
+            <!-- introduction of the page -->
+            <h2>Get in touch with us</h2>
+            <p>If you wish to work with us to fight against air pollution, please leave your name and email address so
+                that you will automatically become a member of us. When you purchase environmentally friendly products
+                from our green partners, you can enjoy extra bonus points. In addition, we will regularly send you
+                relevant knowledge and latest news about air pollution. You can select your area of interest so that we
+                can send you more accurate messages based on these choices.</p>
+            <p>You can also give us suggestions on how to improve air pollution and share your other opinions by leaving
+                a message in the message box.</p>
+            <p>Join us now and fight against air pollution with our <span id="memberNum"></span> members around the
+                world!</p>
+
+            <!-- socail media logos -->
+            <div id="logos">
+                <ul>
+                    <li>
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-youtube"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-weixin"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- contact and address -->
+            <ul id="contact-info">
+                <li><i class="fas fa-phone-alt"></i>+1 649 898 1188</li>
+                <li><i class="fas fa-envelope"></i>zhangzhi@wang.com</li>
+                <li><i class="fas fa-map-marker-alt"></i>205 Humber College Blvd, Etobicoke, ON M9W 5L7</li>
+            </ul>
+
+            <!-- google map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13715.048016463663!2d-79.60205479303652!3d43.72647225220775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3bad044237e1%3A0x37f1551d338720e0!2s205%20Humber%20College%20Blvd%2C%20Etobicoke%2C%20ON%20M9W%205L7!5e0!3m2!1sen!2sca!4v1574629890481!5m2!1sen!2sca"
+                width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div id="right-part">
+            <form>
+                <h2> Become one of our members by completing the form</h2>
+
+                <!-- name and email -->
+                <label for="name" class="hidden"></label>
+                <input type="text" name="name" id="name" placeholder="Name*">
+                <p>Name must be alphanumeric and contain up to 30 characters</p>
+                <label for="email" class="hidden"></label>
+                <input type="email" name="email" id="email" placeholder="Email*">
+                <p>Email must be a valid address, e.g. george@wang.com</p>
+
+                <!-- checkboxes of interest -->
+                <h4>Please select your area of interest</h4>
+                <div>
+                    <input type="checkbox" name="interest" value="news" id="news">
+                    <label for="news">Latest news about air pollution</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interest" value="method" id="method">
+                    <label for="method">How to reduce air pollution</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interest" value="effect" id="effect">
+                    <label for="effect">Health effects of air pollution</label>
+                </div>
+
+                <!-- message -->
+                <label for="message" class="hidden"></label>
+                <textarea name="messages" id="messages" cols="50" rows="10" placeholder="Messages(optional)"></textarea>
+
+                <input type="submit" value="Contact Us" disabled>
+            </form>
+        </div>
+    </div>
+
+    <!-- group -->
+    <footer>
+        <div class="flex-container2  pt-3">
+
+            <div class="col-md-3">
+                <h5 class="text-center">Important</h5>
+                <hr class="bg-light">
+                <ul class="foot">
+                    <li><a href="water-pollution.html">Water Pollution</a></li>
+                    <li><a href="air-pollution-main.html">Air Pollution</a></li>
+                    <li><a href="plastic-pollution.html">Plastic Pollution</a></li>
+                    <li><a href="GW-Effects.html">Global Warming</a></li>
+                    <li><a href="ozonelayer.html">Ozone Layer Depletion</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">About Us</h5>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href="">Our Aim</a></li>
+                    <li><a href="">Together We Can Save</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">Contact Us</h5>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href="" class="text-italic text-underline">togetherwecansave@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">Follow Us</h5>
+                <hr class="bg-light">
+                <!-- some errors in validator, but connect with group files shared by others, so cannot change -->
+                <div class="flex-container3">
+                    <a><img src="./images/facebook.svg" width="40px" id="sm" alt="facebook"></a>
+                    <a><img src="./images/twitter.svg" width="40px" id="sm" alt="twitter"></a>
+                    <a><img src="./images/google-plus.svg" width="40px" id="sm" alt="google-plus"></a>
+                    <a><img src="./images/instagram.svg" width="40px" id="sm" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bg-light org flex-container6">
+            <a class="text-primary ">&copy;2019 tytos.org</a>
+        </div>
+    </footer>
+    <!-- group -->
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/air-pollution-registration.js"></script>
+    <script src="scripts/scrollToTop.js"></script>
+</body>
+
+</html>

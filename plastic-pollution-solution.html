@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Plastic Pollution</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- my styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/plastic.css" />
+
+   <!-- group -->
+    <!--Fvicon icon-->
+    <link rel="icon" href="./images/worldwide.png">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--Data Aos Libraries-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Side Nav Button Script   -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Go to top button -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Side Nav Button -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#definition">Issues</a>
+        <a href="#functionality">Causes</a>
+        <a href="#depletion">Effects</a>
+        <a href="#">Solutions</a>
+        <a href="#">Share Ideas</a>
+    </div>
+    <div class="header">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="ml-1">&#9776;</span>
+
+        <div class="header-right">
+
+            <a class="" href="#home">Home</a>
+            <a href="#issues">Issues</a>
+            <a href="#causes">Causes</a>
+            <a href="#effects">Effects</a>
+            <a href="#solution">Solutions</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#about">About Us</a>
+
+        </div>
+    </div>
+    <!-- jumbotron -->
+
+    <div class="jumbotron ">
+        <div class="title ">
+            <h1 class="display-4 ">Plastic Pollution</h1>
+            <p class="lead ">Together We Can Save</p>
+        </div>
+    </div>
+
+    <br><br>
+    <!-- My Content  -->
+    <h1 class="text-center">Plastic Pollution Solutions</h1>
+    <hr>
+    <br>
+
+    <div id="flex-box">
+
+
+        <div class="container">
+            <h2>Things to do about Plastic Pollution Problem</h2>
+            <div class="eighth">
+                <!-- Errors for iframe in validator, but this is the embedded link from youtube -->
+
+                <iframe width="450" height="350" src="https://www.youtube.com/embed/I5g9-4fx60A" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <ul>
+                    <li>Use your own bags made of jute, cotton, linen, bee’s wax.</li>
+                    <li>Ask for paper bag (holds 5 to 6 times more than a plastic bag).</li>
+                    <li>Ask your merchant to promote cloth bags (charge for plastic or provide incentives for cloth).
+                    </li>
+                    <li>Encourage development of bags made from natural products such as cornstarch and soy.</li>
+                    <li>Write your elected officials regarding the hazards of plastic bags.</li>
+                    <li>Participate in a community/beach cleanup.</li>
+                </ul>
+            </div>
+            <br>
+            <p id="text">Canada is being one of the good example to the others. They are going to ban single use
+                plastics as early as
+                2021! Here you can see the remaining time to embrace this awesome policy:</p>
+            <br>
+            <!-- Display the countdown timer in an element -->
+            <p id="timer"></p>
+            <div id="clockdiv">
+                <div>
+                    <span class="days" id="day"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours" id="hour"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes" id="minute"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds" id="second"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+
+                <!-- Countdown timer script -->
+                <script src="scripts/plastic-countdown.js"></script>
+            </div>
+
+            <br>
+
+            <div class="ninth">
+                <h2>Reduce, Reuse, Recycle</h2>
+                <!-- Errors for iframe in validator, but this is the embedded link from youtube -->
+                <iframe width="450" height="350" src="https://www.youtube.com/embed/ergwipqLwqY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <ul>
+                    <li>Buy your drinks in glass or aluminum containers (75% of aluminum cans are recycled only 36% of
+                        plastic bottles).</li>
+                    <li>Use your own mug or cup for your coffee/tea</li>
+                    <li>Reuse plastic utensils and containers</li>
+                    <li>Make plastic bags into jump ropes, rugs, and hats</li>
+                </ul>
+            </div>
+
+            <div class="tenth">
+                <h2>Plastic Bottle Reduction Campaign</h2>
+                <!-- Errors for iframe in validator, but this is the embedded link from youtube -->
+                <iframe width="450" height="350" src="https://www.youtube.com/embed/mT4Qbp89nIQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>We all need to promote non-plastic water bottles such as; stainless steel or glass water bottles that
+                    people can use them again and again, saving hundreds, if not thousands of plastic water bottles
+                    being consumed. .There are a range of bottles that are available at this <a
+                        href="http://www.freewebstore.org/oceancrusaders/"> Eco-Store.</a></p>
+                <h2>Compostable Plastics Campaign</h2>
+                <p>If we need to use plastic, we need to make them compostable. There are currently some researches
+                    going on with several bio-plastic companies the ways in which we can make compostable plastics more
+                    affordable and more available. A range from Bio-Bag is available at this <a
+                        href="http://www.freewebstore.org/oceancrusaders/"> Eco-Store.</a></p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- My content ending here -->
+    <!-- Group footer here -->
+    <footer class="shadow">
+        <div class="flex-container2 pt-3">
+
+            <div class="col-md-3">
+                <h5 class="text-center">Important</h5>
+                <hr class="bg-light">
+                <ul class="foot ">
+                    <li><a href=" ">Water Pollution</a></li>
+                    <li><a href=" ">Air Pollution</a></li>
+                    <li><a href=" ">Plastic Pollution</a></li>
+                    <li><a href=" ">Deforestration</a></li>
+                    <li><a href=" ">Ozone Layer Depletion</a></li>
+                    <li><a href=" ">Acid Rain</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">About Us</h5>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href=" ">Our Aim</a></li>
+                    <li><a href=" ">Together We Can Save</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">Contact Us</h5>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href=" " class="text-italic text-underline">togetherwecansave@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-center">Follow Us</h5>
+                <hr class="bg-light">
+                <!-- some errors in validator, but it is connectted with group files shared by others, so cannot change -->
+                <div class="flex-container3">
+                    <a><img src="./images/facebook.svg" alt="facebook image" width="40" id="sm"></a>
+                    <a><img src="./images/twitter.svg" alt="twitter image" width="40" id="sm"></a>
+                    <a><img src="./images/google-plus.svg" alt="google-plus image" width="40" id="sm"></a>
+                    <a><img src="./images/instagram.svg" alt="instagram image" width="40" id="sm"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="org flex-container6">
+            <a class="text-primary">&copy;2019 tytos.org</a>
+        </div>
+    </footer>
+
+    <!-- Group scripts here -->
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Group script to go to top of the page here -->
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Environs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!--Fvicon icon-->
+    <link rel="icon" href="./images/worldwide.png">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Data Aos Libraries-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--Top navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top">
+
+        <!--Logo And Name Of a Website-->
+        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30" class="d-inline-block align-top mr-1" ></span>Environs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./layout.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onclick="myFunction()" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Issues
+                              </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./global-warming-Causes.html">Global Warming</a>
+                        <a class="dropdown-item" href="./acid-rain-causes">Acid Rain</a>
+                        <a class="dropdown-item" href="./water_pollution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-causes.html">Air Pollution</a>
+                        <a class="dropdown-item" href="./land-pollution-causes">Land Pollution</a>
+                        <a class="dropdown-item" href="./noise-pollution">Noise Pollution</a>
+                        <a class="dropdown-item" href="./ozonedeplation-causes.html">Ozone Deplation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Effects
+                            </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="./global-warming-Effects.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-effects.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-main.html">Air Pollution</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onclick="myFunction()" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Solutions
+                            </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="./global-warming-Solutions.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-solution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./shareideas.html">Share Your Ideas</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Header Content-->
+    <header>
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><img alt="top button" height="40" width="40" src="images/scroll-up.svg" class="img-fluid"></a>
+    </header>
+    <!--Main Container-->
+    <main class="oz-main">
+        <div class="oz-vdo-container">
+            <video class="oz-video shadow-lg" autoplay muted loop> 
+                <source src="./videos/ozone-depletion.mp4" type="video/mp4">
+            </video>
+            <div class="overlay">
+                <h4 class="oz-overlay-title  h2 display-4">Ozone Layer Depletion</h4>
+            </div>
+        </div>
+    </main>
+    <div class="oz-definition">
+        <div class="shiled-container">
+            <div class="sh-content">
+                <h4 class="display-4" data-aos="zoom-out">Let's Shield Our Shield</h4>
+                <p class="lead" data-aos="zoom-out">Ozone Layer Shields Us From The Harmful Ultraviolate Radiation</p>
+            </div>
+        </div>
+        <div class="center">
+            <h4 class="display-4 mt-5 b1" data-aos="zoom-out">Ozone Layer</h4>
+            <hr>
+            <div class="para1 center">
+                Over the past 30 years humans have made progress in stopping damage to the ozone layer by curbing the use of certain chemicals. But more remains to be done to protect and restore the atmospheric shield that sits in the stratosphere about 9 to 18 miles
+                (15 to 30 kilometers) above the Earth's surface. Atmospheric ozone absorbs ultraviolet (UV) radiation from the sun, particularly harmful UVB-type rays. Exposure to UVB radiation is linked with increased risk of skin cancer and cataracts,
+                as well as damage to plants and marine ecosystems. Atmospheric ozone is sometimes labeled as the "good" ozone, because of its protective role, and shouldn't be confused with tropospheric, or ground-level, "bad" ozone, a key component of
+                air pollution that is linked with respiratory disease. Ozone (O3) is a highly reactive gas whose molecules are comprised of three oxygen atoms. Its concentration in the atmosphere naturally fluctuates depending on seasons and latitudes,
+                but it generally was stable when global measurements began in 1957. Groundbreaking research in the 1970s and 1980s revealed signs of trouble.
+            </div>
+        </div>
+        <div class="center mt-5 ">
+            <h4 class="display-4 b1 mt-5" data-aos="zoom-out">Ozone threats and 'the hole'</h4>
+            <hr>
+            <div class="para1 center">
+                In 1974, Mario Molina and Sherwood Rowland, two chemists at the University of California, Irvine, published an article in Nature detailing threats to the ozone layer from chlorofluorocarbon (CFC) gases. At the time, CFCs were commonly used in aerosol
+                sprays and as coolants in many refrigerators. As they reach the stratosphere, the sun's UV rays break CFCs down into substances that include chlorine. The groundbreaking research—for which they were awarded the 1995 Nobel Prize in chemistry—concluded
+                that the atmosphere had a “finite capacity for absorbing chlorine” atoms in the stratosphere. One atom of chlorine can destroy more than 100,000 ozone molecules, according to the U.S. Environmental Protection Agency, eradicating ozone
+                much more quickly than it can be replaced. Molina and Rowland’s work received striking validation in 1985, when a team of English scientists found a hole in the ozone layer over Antarctica that was later linked to CFCs. The "hole" is actually
+                an area of the stratosphere with extremely low concentrations of ozone that reoccurs every year at the beginning of the Southern Hemisphere spring (August to October). Spring brings sunlight, which releases chlorine into the stratospheric
+                clouds.
+            </div>
+        </div>
+        <div class="center mt-5 ">
+            <h4 class="display-4 b1 mt-5" data-aos="zoom-out">The ozone layer’s status today</h4>
+            <hr>
+            <div class="para1 center">
+                Recognition of the harmful effects of CFCs and other ozone-depleting substances led to the Montreal Protocol on Substances That Deplete the Ozone Layer in 1987, a landmark agreement to phase out those substances that has been ratified by all 197 UN member
+                countries. Without the pact, the U.S. would have seen an additional 280 million cases of skin cancer, 1.5 million skin cancer deaths, and 45 million cataracts—and the world would be at least 25 percent hotter. More than 30 years after
+                the Montreal Protocol, NASA scientists documented the first direct proof that Antarctic ozone is recovering because of the CFC phase-down: Ozone depletion in the region has declined 20 percent since 2005. And at the end of 2018, the United
+                Nations confirmed in a scientific assessment that the ozone layer is recovering, projecting that it would heal completely in the (non-polar) Northern Hemisphere by the 2030s, followed by the Southern Hemisphere in the 2050s and polar regions
+                by 2060.
+                <br><br>The world is not yet in the clear when it comes to harmful gases from coolants. Some hydrochlorofluorocarbons (HCFCs), transitional substitutes that are less damaging but still harmful to ozone, are still in use. Developing countries
+                need funding from the Montreal Protocol's Multilateral Fund to eliminate the most widely used of these, the refrigerant R-22. The next generation of coolants, hydrofluorocarbons (HFCs), do not deplete ozone, but they are powerful greenhouse
+                gases that trap heat, contributing to climate change.
+                <br><br>Though HFCs represent a small fraction of emissions compared with carbon dioxide and other greenhouse gases, their planet-warming effect prompted an addition to the Montreal Protocol, the Kigali Amendment, in 2016. The amendment,
+                which came into force in January 2019, aims to slash the use of HFCs by more than 80 percent over the next three decades. In the meantime, companies and scientists are working on climate-friendly alternatives, including new coolants and
+                technologies that reduce or eliminate dependence on chemicals.
+            </div>
+        </div>
+    </div>
+    <br>
+    <h4 class="display-4 center mt-5 b1" data-aos="zoom-out">Look At Some Tweet About Ozone Layer</h4>
+    <hr>
+    <div class="tweet-container">
+        <div class="tweet1" data-aos="zoom-in">
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Since the dawn of civilization, humans have been predicting doom. Whether it&#39;s an ice age, famine, acid rain, ozone depletion, pandemic, or climate apocalypse, we are wired to predict annihilation. <a href="https://t.co/3atWVdNdyz">pic.twitter.com/3atWVdNdyz</a></p>&mdash;
+                Andrew Mente, PhD (@andrewmente) <a href="https://twitter.com/andrewmente/status/1201611257461268481?ref_src=twsrc%5Etfw">December 2, 2019</a></blockquote>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+        <div class="tweet2" data-aos="zoom-in">
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">You think the world revolves around you? Ha! No. It revolves around a heated mass of hydrogen and helium that gives off emissions that cause cancer and we don’t have an ozone layer to protect us anymore because of air pollution. <a href="https://twitter.com/hashtag/pollutionemergency?src=hash&amp;ref_src=twsrc%5Etfw">#pollutionemergency</a>                    <a href="https://twitter.com/hashtag/world?src=hash&amp;ref_src=twsrc%5Etfw">#world</a> <a href="https://t.co/KNX7Qoecni">pic.twitter.com/KNX7Qoecni</a></p>&mdash; Angsty Anti-plastic (@AngstyAnti) <a href="https://twitter.com/AngstyAnti/status/1201826514121179136?ref_src=twsrc%5Etfw">December 3, 2019</a></blockquote>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+        <div class="tweet3" data-aos="zoom-in">
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Breathing polluted air can irritate your throat &amp; make breathing difficult. Pollutants like tiny airborne particles &amp; ground-level ozone can trigger respiratory problems, especially for people with asthma. <a href="https://twitter.com/hashtag/HepaHat?src=hash&amp;ref_src=twsrc%5Etfw">#HepaHat</a>                    provides you with fresh clean purified air..have fun breathing!⠀ <a href="https://t.co/3tQc6eIWHe">pic.twitter.com/3tQc6eIWHe</a></p>&mdash; Hepa-Hat (@HepaHat) <a href="https://twitter.com/HepaHat/status/1199156888530759681?ref_src=twsrc%5Etfw">November 26, 2019</a></blockquote>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+        <div class="tweet4" data-aos="zoom-in">
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">32 years ago, 197 countries around the world agreed human activity was causing the hole in the ozone.<br><br>They signed the Montreal Protocol &amp; took emergency action.<br><br>In 2016, scientists discovered that the agreement was working.<br><br>The
+                    ozone layer was healing. <a href="https://t.co/zSRBv3AX5X">https://t.co/zSRBv3AX5X</a></p>&mdash; Belinda Barnet (@manjusrii) <a href="https://twitter.com/manjusrii/status/1199242750761168896?ref_src=twsrc%5Etfw">November 26, 2019</a></blockquote>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+    </div>
+    <br>
+    <h4 class="display-4 center blue">An Idea Can Make A Change</h4>
+    <hr>
+    <!--Share Ideas-->
+    <div class="shareidea-container">
+        <div class="user-ideas">
+            <h4 class="display-4 center">User Ideas</h4>
+
+            <div class="wrapper shadow-lg">
+                <div class="profile">
+                    <table id="userdata">
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="shi-form">
+            <!--Form-->
+            <form class="form shadow-lg" id="ideas_form">
+                <h2 class="cursive">Share Your Ideas</h2>
+                <br>
+                <label class="cursive">Name:</label><br>
+                <input type="text" id="name"><br><br>
+                <label id="name-error"></label>
+                <label class="cursive">Email:</label><br>
+                <input type="text" id="email"><br><br>
+                <label id="email-error"></label>
+                <label class="cursive">Write your suggestions:</label><br>
+                <textarea id="idea"></textarea><br><br>
+                <label id="idea-error"></label>
+                <label class="cursive">Choose your state:</label><br>
+                <select id="state">
+                                <option value="0">Select state:</option>
+                                <option value="1">Ontario</option>
+                                <option value="2">Quebec</option>
+                                <option value="3">Nova Scotia</option>
+                                <option value="4">Manitoba</option>
+                                <option value="5">Saskatchewan</option>
+                                <option value="6">Alberta</option>
+                                <option value="7">Newfoundland & Labrador	</option>
+                                <option value="8"> New Brunswick</option>
+                </select><br><br>
+                <div class="btn-container">
+                    <div><input type="submit" class="btn shadow" id="submit" value="submit"></div>
+                    <div><input type="reset" class="btn shadow" id="reset"></div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <!--Footer Container-->
+    <footer>
+        <div class="ft-container">
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Important</div>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href="./water_pollution.html">Water Pollution</a></li>
+                    <li><a href=" ">Air Pollution</a></li>
+                    <li><a href=" ">Land Pollution</a></li>
+                    <li><a href=" ">Deforestration</a></li>
+                    <li><a href=" ">Ozone Layer Depletion</a></li>
+                    <li><a href=" ">Acid Rain</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">About Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <li><a href=" ">Our Aim</a></li>
+                    <li><a href=" ">Together We Can Save</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Contact Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <li><a href="" class="text-italic text-underline ">togetherwecansave@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Follow Us</div>
+                <hr class="bg-light ">
+                <div class="">
+                    <div class="social-media-container">
+                        <a><img alt="facebook" src="./images/facebook.svg " width="40" class="img-fluid"></a>
+                        <a><img alt="twiteer" src="./images/twitter.svg " width="40" class="img-fluid"></a>
+                        <a><img alt="google plus" src="./images/google-plus.svg " width="40" class="img-fluid"></a>
+                        <a><img alt="instagram" src="./images/instagram.svg " width="40" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cp-right">
+            <div class="display-6 blue"><a id="cp-right">&copy;www.tytos.org</a></div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="./scripts/scrollToTop.js"></script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/ideas.js"></script>
+    <script src="./scripts/validate2.js"></script>
+
+</body>
+
+</html>

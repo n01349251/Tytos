@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Global Warming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Environmental Issues" />
+    <meta name="description" content="A website that provide knowledge about Global Warming">
+    <meta name="keywords"
+        content="Global Warming, what is Global Warming, causes of Global Warming, solutions of Global Warming">
+
+    <!--Favicon icon-->
+    <link rel="icon" href="./images/worldwide.png">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./styles/gwcauses.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+
+    <!--Data Aos Libraries-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+<body>
+    <!--Top navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top">
+
+        <!--Logo And Name Of a Website-->
+        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30"
+                    class="d-inline-block align-top mr-1" alt=""></span>Environs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onclick="myFunction()" class="dropbtn" href="#"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Issues
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./global-warming-Causes.html">Global Warming</a>
+                        <a class="dropdown-item" href="./acid-rain-causes">Acid Rain</a>
+                        <a class="dropdown-item" href="./water_pollution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-causes.html">Air Pollution</a>
+                        <a class="dropdown-item" href="./land-pollution-causes">Land Pollution</a>
+                        <a class="dropdown-item" href="./noise-pollution">Noise Pollution</a>
+                        <a class="dropdown-item" href="./ozonelayer.html">Ozone Deplation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onclick="myFunction()" class="dropbtn" href="#"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Effects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./global-warming-Effects.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-effects.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-main.html">Air Pollution</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onclick="myFunction()" class="dropbtn" href="#"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Solutions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./form.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-solution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./shareideas.html">Share Your Ideas</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Header Content-->
+    <header>
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><img alt="top button" height="40px" width="40px"
+                src="images/scroll-up.svg" class="img-fluid"></a>
+    </header>
+
+    <main class="layout-main">
+        <div class="main-container">
+            <img src="images/global1.jpg" name="mainslideshow" id="mainslideshow">
+        </div>
+    </main>
+    <h1 id="scroll">The Causes of Global Warming</h1>
+    <div class="container">
+        <div class="causescontainer">
+            <section>
+
+                <img data-aos="zoom-in-right" class="imgcauses" src="images/slider.gif" alt="GreenHouse Effect"
+                    title="Greenhouse Effect" /><br /><br />
+                <p id="para"></p>
+                <button id="readmore">Read more</button>
+
+                <div id="displaymore">
+                    <h3>The Role of Human Activity</h3>
+                    <p>In its Fifth Assessment Report, the Intergovernmental Panel on Climate Change, a group of 1,300
+                        independent
+                        scientific experts from countries
+                        all over the world under the auspices of the United Nations, concluded there's a more than 95
+                        percent
+                        probability that human activities over the
+                        ears have warmed our planet.</p>
+
+                    <p>The industrial activities that our modern civilization depends upon have raised atmospheric
+                        carbon dioxide
+                        levels from 280 parts per million to 400
+                        parts per million in the last 150 years. The panel also concluded there's a better than 95
+                        percent
+                        probability that human-produced greenhouse gases
+                        such as carbon dioxide, methane and nitrous oxide have caused much of the observed increase in
+                        Earth's
+                        temperatures over the past 50 years.</p>
+                </div>
+            </section>
+            <section>
+                <img src="images/gases.jpg" alt="Gases that caused GreenHouse Effect"
+                    title="Gases that caused Greenhouse Effect" />
+                <h2>Gases that contribute to the greenhouse effect include:</h2>
+                <ul id="list">
+
+                </ul>
+
+            </section>
+        </div>
+
+        <aside>
+            <article id="articleeffect">
+                <div class="item shadow-lg">
+                    <img src="images/toomuch.jpg" alt="Too Much GreenHouse Effect"
+                        title="Too Much Greenhouse Effect" /><br><br>
+                    <h3>Too much greenhouse effect:</h3>
+                    <p>The atmosphere of Venus, like Mars, is nearly all carbon dioxide. But Venus has about 154,000
+                        times as
+                        much carbon
+                        dioxide in its atmosphere as Earth (and about 19,000 times as much as Mars does), producing a
+                        runaway
+                        greenhouse effect and a surface temperature
+                        hot enough to melt lead.</p>
+                </div>
+                <br>
+                <div class="item shadow-lg">
+                    <img src="images/notenough.jpg" alt="Not Enough GreenHouse Effect"
+                        title="Not Enough Greenhouse Effect" /><br><br>
+                    <h3>Not enough greenhouse effect:</h3>
+                    <p>The planet Mars has a very thin atmosphere, nearly all carbon dioxide. Because of the low
+                        atmospheric
+                        pressure,
+                        and with little to no methane or water vapor to reinforce the weak greenhouse effect, Mars has a
+                        largely
+                        frozen surface that shows no evidence
+                        of life.</p>
+                </div>
+            </article>
+        </aside>
+    </div>
+    <!---Footer Container-->
+    <footer>
+        <div class="ft-container">
+            <div class="ft-item">
+                <div class="ft-title">Important</div>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href="./global-warming-Causes.html">Global Warming</a></li>
+                    <li><a href=" ">Air Pollution</a></li>
+                    <li><a href=" ">Land Pollution</a></li>
+                    <li><a href=" ">Deforestration</a></li>
+                    <li><a href=" ">Ozone Layer Depletion</a></li>
+                    <li><a href=" ">Acid Rain</a></li>
+                </ul>
+            </div>
+            <div class="ft-item">
+                <div class="ft-title">About Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <li><a href=" ">Our Aim</a></li>
+                    <li><a href=" ">Together We Can Save</a></li>
+                </ul>
+            </div>
+            <div class="ft-item">
+                <div class="ft-title">Contact Us</div>
+                <hr class="bg-light">
+                <ul class="">
+                    <li><a href="" class="text-italic text-underline ">togetherwecansave@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="ft-item">
+                <div class="ft-title">Follow Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <div class="social-media-container">
+                        <a><img alt="facebook" src="./images/facebook.svg " width="40px " id="sm "
+                                class="img-fluid"></a>
+                        <a><img alt="twitter" src="./images/twitter.svg " width="40px " id="sm " class="img-fluid"></a>
+                        <a><img alt="google plus" src="./images/google-plus.svg " width="40px " id="sm "
+                                class="img-fluid"></a>
+                        <a><img alt="instagram" src="./images/instagram.svg " width="40px " id="sm "
+                                class="img-fluid"></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="cp-right">
+            <div class="display-6 blue"><a id="cp-right">&copy;www.tytos.org</a></div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./scripts/slideshow_global.js"></script>
+    <script src="./scripts/scrollToTop.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>

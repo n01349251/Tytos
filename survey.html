@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Environs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!--Fvicon icon-->
+    <link rel="icon" href="./images/worldwide.png">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Data Aos Libraries-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!--Top navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top">
+
+        <!--Logo And Name Of a Website-->
+        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30" class="d-inline-block align-top mr-1" ></span>Environs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Issues
+                                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./global-warming-Causes.html">Global Warming</a>
+                        <a class="dropdown-item" href="./acid-rain-causes">Acid Rain</a>
+                        <a class="dropdown-item" href="./water_pollution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-causes.html">Air Pollution</a>
+                        <a class="dropdown-item" href="./land-pollution-causes">Land Pollution</a>
+                        <a class="dropdown-item" href="./noise-pollution">Noise Pollution</a>
+                        <a class="dropdown-item" href="./ozonelayer.html">Ozone Deplation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Effects
+                                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="./global-warming-Effects.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-effects.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-main.html">Air Pollution</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Solutions
+                                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="./global-warming-Solutions.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-solution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./shareideas.html">Share Your Ideas</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Header Content-->
+    <header>
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><img height="40" width="40" src="images/scroll-up.svg" class="img-fluid" alt="scroll top"></a>
+    </header>
+
+    <!--Main Container-->
+    <div class="progress-container mt-5 shadow">
+        <div class="progressbar"></div>
+    </div>
+    <div class="survey-container shadow-lg" style="text-align:center;" id="test">
+
+        <form>
+            <div class="page-1">
+                <h4 class="">You never throw garbage on streets</h4>
+                <div id="qs1">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs1" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs1" value="‭71.4285715‬" class="form-radio ag2">
+                    <input type="radio" name="qs1" value="‭57.1428572‬" class="ag1 form-radio">
+                    <input type="radio" name="qs1" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs1" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs1" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs1" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You always throw recyclable garbage in recyle bins only</h4>
+                <div id="qs2">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs2" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs2" value="‭71.4285715‬" class="ag2 form-radio">
+                    <input type="radio" name="qs2" value="‭57.1428572‬" class="ag1 form-radio">
+                    <input type="radio" name="qs2" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs2" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs2" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs2" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>Your prefer travelling by public transport more</h4>
+                <div id="qs3">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs3" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs3" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs3" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs3" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs3" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs3" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs3" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You turn off the lights when not in use</h4>
+                <div id="qs4">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs4" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs4" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs4" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs4" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs4" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs4" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs4" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You don't blow horns in silent zonned areas</h4>
+                <div id="qs5">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs5" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs5" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs5" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs5" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs5" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs5" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs5" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+            </div>
+            <div class="page-2">
+                <h4>You carry cloth bags while going for shopping</h4>
+                <div id="qs6">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs6" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs6" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs6" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs6" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs6" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs6" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs6" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You keep your Surroundings clean</h4>
+                <div id="qs7">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs7" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs7" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs7" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs7" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs7" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs7" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs7" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You turn off the water taps after using it</h4>
+                <div id="qs8">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs8" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs8" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs8" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs8" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs8" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs8" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs8" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You plant more trees</h4>
+                <div id="qs9">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs9" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs9" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs9" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs9" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs9" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs9" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs9" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You take lead in activities that benefits the nature</h4>
+                <div id="qs10">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs10" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs10" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs10" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs10" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs10" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs10" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs10" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+            </div>
+            <div class="page-3">
+                <h4>You carry cloth bags while going for shopping</h4>
+                <div id="qs11">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs11" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs11" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs11" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs11" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs11" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs11" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs11" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You keep your Surroundings clean</h4>
+                <div id="qs12">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs12" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs12" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs12" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs12" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs12" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs12" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs12" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You turn off the water taps after using it</h4>
+                <div id="qs13">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs13" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs13" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs13" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs13" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs13" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs13" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs13" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You plant more trees</h4>
+                <div id="qs14">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs14" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs14" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs14" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs14" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs14" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs14" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs14" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+                <hr>
+                <h4>You Keep your surroundings clean</h4>
+                <div id="qs15">
+                    <label class="label-agree">Agree</label>
+                    <input type="radio" name="qs15" value="100" class="ag3 form-radio">
+                    <input type="radio" name="qs15" value="71.4285715" class="ag2 form-radio">
+                    <input type="radio" name="qs15" value="57.1428572" class="ag1 form-radio">
+                    <input type="radio" name="qs15" value="42.8571429" class="null form-radio">
+                    <input type="radio" name="qs15" value="28.5714286" class="dg1 form-radio">
+                    <input type="radio" name="qs15" value="14.2857143" class="dg2 form-radio">
+                    <input type="radio" name="qs15" value="0" class="dg3 form-radio">
+                    <label class="label-disagree">Disagree</label>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="survey-btns">
+                <input type="button" value="next" id="next-btn1" class="btn btn-primary">
+                <input type="button" value="next" id="next-btn2" class="btn btn-primary">
+                <input type="button" value="submit" id="s1" onclick="calc()" class="btn btn-success">
+
+            </div>
+        </form>
+
+    </div>
+    <br>
+    <!--
+    <svg viewBox="0 0 36 36" class="circular-chart" id="result">
+            <path class="circle"
+              stroke-dasharray="60, 100" id="stroke"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+    </svg>-->
+    <div class="result-container mt-5 shadow-lg">
+        <div id="result-text"></div>
+    </div>
+    <!--Scripts-->
+    <script src="./scripts/survey.js"></script>
+
+</body>
+
+
+</html>

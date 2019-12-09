@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/air-main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website that introduces knowledge about air pollution">
+    <meta name="keywords"
+        content="air pollution, what is air pollution, causes of air pollution, solutions of air pollution">
+    <title>Air Pollution</title>
+
+    <!-- group -->
+    <!--Fvicon icon-->
+    <link rel="icon" href="./images/worldwide.png">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--Data Aos Libraries-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header"></div>
+
+        <!-- go to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!-- jumbotron -->
+        <div class="jumbotron">
+            <div class="title">
+                <h1 class="display-4">Air Pollution</h1>
+                <p class="lead ">Together We Can Save</p>
+            </div>
+        </div>
+
+        <!-- Requires webserver, otherwise it will not be displayed properly -->
+        <!-- mine -->
+        <main>
+            <section id="section1" class="grid"></section>
+            <section id="section2" class="grid">
+                <ul></ul>
+            </section>
+            <section id="section3" class="grid"></section>
+        </main>
+        <!-- group -->
+        <footer>
+            <div class="flex-container2  pt-3">
+
+                <div class="col-md-3">
+                    <h5 class="text-center">Important</h5>
+                    <hr class="bg-light">
+                    <ul class="foot">
+                        <li><a href="water-pollution.html">Water Pollution</a></li>
+                        <li><a href="air-pollution-main.html">Air Pollution</a></li>
+                        <li><a href="plastic-pollution.html">Plastic Pollution</a></li>
+                        <li><a href="GW-Effects.html">Global Warming</a></li>
+                        <li><a href="ozonelayer.html">Ozone Layer Depletion</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">About Us</h5>
+                    <hr class="bg-light">
+                    <ul>
+                        <li><a href="">Our Aim</a></li>
+                        <li><a href="">Together We Can Save</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">Contact Us</h5>
+                    <hr class="bg-light">
+                    <ul>
+                        <li><a href="" class="text-italic text-underline">togetherwecansave@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-center">Follow Us</h5>
+                    <hr class="bg-light">
+                    <!-- some errors in validator, but connect with group files shared by others, so cannot change -->
+                    <div class="flex-container3">
+                        <a><img src="./images/facebook.svg" width="40px" id="sm" alt="facebook"></a>
+                        <a><img src="./images/twitter.svg" width="40px" id="sm" alt="twitter"></a>
+                        <a><img src="./images/google-plus.svg" width="40px" id="sm" alt="google-plus"></a>
+                        <a><img src="./images/instagram.svg" width="40px" id="sm" alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bg-light org flex-container6">
+                <a class="text-primary ">&copy;2019 tytos.org</a>
+            </div>
+        </footer>
+    </div>
+    <!-- group -->
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/air-pollution-main.js"></script>
+    <script src="scripts/scrollToTop.js"></script>
+</body>
+
+</html>
