@@ -1,0 +1,223 @@
+.container {
+    width: 80%;
+    display: grid;
+    margin: 0px 50px 20px 50px;
+
+}
+
+.first {
+   
+    padding-top: 1px;
+    padding-bottom: 1px;
+    overflow: auto;
+}
+   
+.first img {
+    float: right;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+.second {
+        overflow: auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        float: right;
+      }
+ .second img {
+        float: left;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }     
+
+.third {
+        
+        padding-top: 1px;
+        padding-bottom: 1px;
+        overflow: auto;
+    }
+       
+    .third img {
+        float: right;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        }
+
+.eighth {
+            float: left;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            overflow: auto;
+        }
+           
+.eighth iframe {
+            float: right;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            }       
+
+.ninth {
+                float: right;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                overflow: auto;
+            }
+               
+.ninth iframe {
+                float: left;
+                padding-right: 25px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                }         
+
+.tenth {
+                    float: left;
+                    padding-top: 1px;
+                    padding-bottom: 1px;
+                    overflow: auto;
+                }
+                   
+.tenth iframe {
+                    float: right;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    }       
+                
+           
+/* Countdown Timer Style */                    
+#text {
+       font-size: 1.3em;
+}
+
+#timer{
+    font-size: 1.4em;
+    color:rgb(47, 211, 162);
+}
+#clockdiv{ 
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 30px; 
+} 
+#clockdiv > div{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    background:  #00B4DB;; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    background: rgb(32, 160, 189);; 
+    display: inline-block; 
+} 
+.smalltext{ 
+    padding-top: 5px; 
+    font-size: 30px; 
+} 
+
+
+/* Slideshow style;
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 11s;
+    animation-name: fade;
+    animation-duration: 11s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1.0}
+  }
+  
+  @keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1.0}
+  }
+

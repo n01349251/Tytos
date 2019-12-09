@@ -1,0 +1,40 @@
+.img {
+    float: right;
+    background-color: #aaa;
+    width: 50%;
+    padding: 5px;
+}
+
+.card {
+    background-color: #99a4f1;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .img {
+        float: center;
+        height: auto;
+        width: auto;
+    }
+    body {
+        font-size: 10px;
+    }
+}
+
+p {
+    justify-content: left;
+}
+
+body h2 {
+    text-decoration: underline;
+    color: black;
+    font-size: 30px;
+}

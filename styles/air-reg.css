@@ -1,0 +1,168 @@
+body {
+    background: #fff;
+    margin: 0;
+    font-size: 16px;
+    min-width:300px;
+    line-height: 1.5em;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.jumbotron{
+    height: 900px;
+}
+
+#pageheader {
+    height: 250px;
+    background: url("../images/daylight-environment-forest-459225.jpg");
+    background-size: cover;
+    background-position: middle;
+    margin-bottom: 80px;
+    display: grid;
+}
+
+h1 {
+    margin: 0 0 0 50px;
+    align-self: center;
+    font-size: 2.5em;
+}
+
+/* left part */
+#left-part h2{
+    margin-bottom: 15px !important;
+}
+
+#page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 80px auto;
+    gap: 50px;
+}
+
+#memberNum {
+    color: #00b4db;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+#logos ul {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    margin: 30px 0;
+}
+
+#contact-info {
+    display: grid;
+    grid-template-rows: repeat(3, 35px);
+}
+
+#contact-info i {
+    padding-right: 20px;
+}
+
+/* right part */
+#right-part {
+    background-color: #edf3f5;
+    padding: 30px 20px;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 60px 45px 30px 45px 30px 30px repeat(3,25px) 1fr 100px;
+    height: 100%;
+} 
+
+form h2 {
+    font-size: 1.2em;
+}
+
+form h4 {
+    font-size: 1em;
+    margin: 0;
+    align-self: center;
+}
+
+form p{
+    font-size: 0.7em;
+    margin: 0;
+    color: rgba(255, 0, 0, 0);
+}
+
+form label.hidden{
+    display: none;
+}
+
+input.valid + p{
+    color: rgba(255, 0, 0, 0);
+}
+
+input.invalid + p{
+    color: rgba(255, 0, 0, 1);
+}
+
+[type=text],
+[type=email],
+textarea {
+    padding-left: 20px;
+    width: 100%;
+}
+
+[type=text],[type=email]{
+    height: 45px;
+    margin: 0 ;
+}
+
+textarea{
+    margin-top: 15px !important;
+}
+
+[type=submit] {
+    width: 160px;
+    height: 50px;
+    align-self: center;
+    justify-self: center; 
+    border-radius: 20px;
+    border: none;
+    background: #00B4DB;
+    color: white;
+}
+
+[type=submit]:hover:enabled{
+    background:#33C2E2
+}
+
+[type=submit]:disabled{
+    background:#6c757d;
+}
+
+@media screen and (max-width: 1080px) {
+    #page-container {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    form h2 {
+        font-size: 1.0em;
+    }
+
+    form h4 {
+        font-size: 0.8em;
+    }
+
+    form span {
+        font-size: 0.8em;
+    }
+}

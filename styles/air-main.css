@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.jumbotron{
+    height: 900px;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+main h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1.5em 0 0.5em;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main p {
+    margin: 0;
+    padding: 1em 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+main #section2 p{
+    height: 200px;
+}
+
+main .btn {
+    background: #333;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+main .btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+main .content-wrap {
+    padding: 0 1.5em;
+}
+
+main #section1 {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+main #section2 {
+    padding: 2em 1em;
+}
+
+main #section2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+main #section2 li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+main #section3 {
+    background: #eaeaea;
+    color: #333;
+    padding: 2em 0;
+}
+
+main #section3 h2 {
+    padding: 0;
+}
+
+main a:hover {
+    text-decoration: none;
+}
+
+.scroll-show{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+@media(min-width: 760px) {
+    main #section2 img {
+        height: 12em;
+    }
+    main .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+    }
+    main .content-wrap,
+    #section2 ul {
+        grid-column: 2/4;
+    }
+    main #section2 ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    main #section2 li {
+        width: 31%;
+    }
+    main #section2 img {
+        transition: 0.05s;
+    }
+    #section2 img:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    .content-text {
+        columns: 2;
+        column-gap: 3em;
+    }
+    nav ul {
+        grid-template-columns: 1fr repeat(5, minmax(auto, 12em)) 1fr;
+        grid-template-rows: none;
+        height: 3em;
+    }
+    nav li {
+        border-bottom: none;
+        font-size: 15px;
+    }
+    nav li:first-child {
+        grid-column: 2;
+    }
+    nav li:hover {
+        background: #eaeaea;
+        cursor: pointer;
+    }
+    nav li:hover a {
+        color: #333;
+    }
+}
