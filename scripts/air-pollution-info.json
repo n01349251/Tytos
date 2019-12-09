@@ -1,0 +1,33 @@
+{
+  "definition": {
+    "title": "What Is Air Pollution?",
+    "text": "Air pollution refers to the release of pollutants into the air that are detrimental to humans and the planet. Air pollution is undoubtedly one of today's most serious environmental issues.It is the fourth-largest threat to human health and kills an estimated 7 million people worlwide every year.",
+    "link": "#"
+  },
+  "causes":{
+    "title": "Causes",
+    "text": "The main sources of air pollution are industrial exhaust gases; exhaust emissions from vehicles; and toxic gases from open-burning garbage.",
+    "imgUrl": "./images/chimney.jpg",
+    "imgAlt": "chimney",
+    "link": "air-pollution-causes.html"
+  },
+  "impacts":{
+    "title": "Impacts",
+    "text": "Impacts from air pollution include heart disease, lung cancer, and respiratory diseases. Air pollution can also cause long-term damage to people's nerves, kidneys, liver, and other organs.",
+    "imgUrl": "./images/building.jpg",
+    "imgAlt": "building",
+    "link": "#"
+  },
+  "solutions":{
+    "title": "Solutions",
+    "text": "Air pollution's most simple solution is to move away from fossil fuels, replacing them with alternative energy sources such as solar, wind and geothermal.",
+    "imgUrl": "./images/air1.jpg",
+    "imgAlt": "wind farm",
+    "link": "#"
+  },
+  "contactUs":{
+    "title": "Fight Against Air Pollution With Us",
+    "text": "If you wish to work with us to fight against air pollution, please leave your name and email address so that you will automatically become a member of us. When you purchase environmentally friendly products from our green partners, you can enjoy extra bonus points. In addition, we will regularly send you relevant knowledge and latest news about air pollution. You can select your area of interest so that we can send you more accurate messages based on these choices. You can also give us suggestions on how to improve air pollution and share your other opinions.",
+    "link": "air-pollution-registration.html"
+  }
+}

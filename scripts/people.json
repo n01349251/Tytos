@@ -1,0 +1,22 @@
+{
+    "person": [{
+            "img": "/images/user.png",
+            "name": "karan",
+            "email": "k@123.com",
+            "idea": "Use renewable energy resources and save fuels"
+
+        },
+        {
+            "img": "/images/user.png",
+            "name": "Vidhi",
+            "email": "v@123.com",
+            "idea": "Grow more trees for clean environment"
+        },
+        {
+            "img": "/images/user.png",
+            "name": "Adit",
+            "email": "a@123.com",
+            "idea": "Focus on a Solar energy"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "user": [{
+            "user_name": "Clark",
+            "email": "123@123.com",
+            "country": "cannada",
+            "province": "ON"
+        },
+        {
+            "user_name": "Clark2",
+            "email": "123@123.com",
+            "country": "cannada",
+            "province": "BC"
+        },
+        {
+            "user_name": "Clark3",
+            "email": "123@123.com",
+            "country": "cannada",
+            "province": "AB"
+        }
+
+    ]
+}
