@@ -160,3 +160,37 @@ The main purpose of this page is to show general information about air pollution
 * Request json data through ajax
 * Read and write data in local storage
 * Dynamically generate web pages through jquery
+
+#  Anupriya Singh
+### Project phase 1
+#### Documents:
+* global-warming-Causes.html
+* gwcauses.css
+* script.js
+* slideshow_global.js
+* causes.json
+* causes1.json
+
+#### Description：
+The purpose of this page is to explain the main causes of Global Warming.
+#### Javascript: 
+In this page,I have used javascript on scroll to top button. It appears when user scroll down the screen.When user clicks on that button,it takes the user to top of the page.Moreover,I created a read more button.When user clicks on that button then it will show/hide the contents inside that element.
+
+### Project phase 2
+#### Documents:
+* global-warming-Effects.html
+* effects.css
+* slideshow_global.js
+
+### Project Phase 3
+#### Documents:
+* form.html
+* form.css
+* form.js
+
+#### Description：
+The page is a review page which consists of a form in which i have put vaidation using javascript.
+#### Javascript:
+* Scroll to top button
+* Verify the form's input with regular expression.
+* The submit button can be clicked only after the validation has passed.
