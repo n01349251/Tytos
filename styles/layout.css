@@ -4,10 +4,14 @@ body {
     height: 100%;
 }
 
+main {
+    width: 100%;
+    height: auto;
+}
 
-/* .layout-main {
-    height:600px;
-} */
+.layout-main {
+    height: 100%;
+}
 
 nav {
     opacity: 99;
@@ -59,19 +63,16 @@ nav {
 /*making main container flexible*/
 
 .main-container {
-    
+    display: flex;
     z-index: -1;
     background: #00B4DB;
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-    height:600px;
-    color: white;
-    /* align-items: center;
-    justify-content: center; */
-    width: 100%;
-}
-.main-container img{
-    width:100%;
+    background: linear-gradient(to right, #0083B0, #00B4DB);
     height: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 
@@ -102,9 +103,6 @@ nav {
         flex-direction: column;
         justify-content: flex-end;
         padding: 20px;
-    }
-    .main-container{
-        height:300px;
     }
 }
 
@@ -144,7 +142,7 @@ nav {
 
 .social-media-container {
     display: flex;
-    Justify-content:center;
+    justify-content: center;
 }
 
 .social-media-container a {
@@ -225,9 +223,6 @@ nav {
     .sidenav a {
         font-size: 18px;
     }
-    .main-container{
-        height:200px;
-    }
 }
 
 
@@ -279,7 +274,6 @@ nav {
         margin: auto;
         margin-top: 30px;
     }
-    
 }
 
 
@@ -367,13 +361,10 @@ hr {
 }
 
 
-/*.col-sm-2:hover {
-    transform: scale(1.2);
-}
-*/
+/*---------------*/
 
 
-/*ddrop down*/
+/*ddrop down menus*/
 
 .dropbtn {
     background-color: #3498DB;
@@ -420,7 +411,7 @@ hr {
 }
 
 
-/**/
+/*Styles for Ozone Layer Page*/
 
 .oz-vdo-container,
 .shiled-container {
@@ -501,6 +492,9 @@ hr {
 .c1 {
     color: white;
 }
+
+
+/*User Suggestions Page*/
 
 
 /*Share Ideas Container*/
@@ -637,6 +631,9 @@ td {
     margin-top: 10px;
 }
 
+
+/*Table which is used to show the JSon Data*/
+
 tbody div {
     display: flex;
     flex-direction: column;
@@ -648,7 +645,7 @@ tbody div span1 {
     align-items: center;
 }
 
-.span1 h4 {
+span1 h4 {
     margin-left: 10px;
     color: #00B4DB;
 }
@@ -657,11 +654,304 @@ tbody div img {
     height: 50px;
 }
 
-
-
 #wrp {
     width: 80%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+
+/*Pollution Card*/
+
+#pp,
+#cp,
+#ar,
+#sp,
+#lp,
+#ap,
+#wp,
+#ra,
+#od,
+#gw,
+#cc,
+#df,
+#mg {
+    cursor: pointer;
+}
+
+
+/*Scale class that adjusts the scale of div when applied*/
+
+.scale {
+    transform: scale(0.9);
+}
+
+
+/*Styles For Survey Page*/
+
+.survey-container {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-top: 25px;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.survey-container form {
+    width: 80%;
+}
+
+
+/*Radio buttons*/
+
+.form-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+    border: 5px solid #2980b9
+}
+
+.ag1,
+.dg1 {
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    top: 10px;
+    height: 35px;
+    width: 35px;
+    border: 0;
+}
+
+.ag2,
+.dg2 {
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    border: 0;
+}
+
+.ag3,
+.dg3 {
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    top: 10px;
+    height: 45px;
+    width: 45px;
+    border: 0;
+}
+
+.null {
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+}
+
+.ag1,
+.ag2,
+.ag3 {
+    border: 5px solid #0d47a1
+}
+
+.null {
+    border: 5px solid gainsboro;
+}
+
+.dg1,
+.dg2,
+.dg3 {
+    border: 5px solid #ff4444
+}
+
+.ag1:hover,
+.ag2:hover,
+.ag3:hover,
+.ag1:checked,
+.ag2:checked,
+.ag3:checked {
+    background-color: #0d47a1;
+}
+
+.dg1:hover,
+.dg2:hover,
+.dg3:hover,
+.dg1:checked,
+.dg2:checked,
+.dg3:checked {
+    background-color: #ff4444;
+}
+
+.null:hover,
+.null:checked {
+    background-color: gainsboro;
+}
+
+.form-radio:checked::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+#s1 {
+    cursor: pointer;
+}
+
+#qs1,
+#qs2,
+#qs3,
+#qs4,
+#qs5,
+#qs6,
+#qs7,
+#qs8,
+#qs9,
+#qs10 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 70%;
+    margin: auto
+}
+
+.label-agree {
+    color: #0d47a1;
+    font-size: 1.6em;
+}
+
+.label-disagree {
+    color: #ff4444;
+    font-size: 1.6em;
+}
+
+#next-btn1,
+#next-btn2,
+#s1 {
+    width: 100px;
+}
+
+
+/*Progress Bar Styles*/
+
+.progress-container {
+    display: flex;
+    width: 80%;
+    background-color: gainsboro;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.progressbar {
+    background: -webkit-linear-gradient(to right, #00B4DB, #0083B0);
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: auto;
+}
+
+
+/*Result Bar Styles*/
+
+.result-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.resultbar {
+    background: -webkit-linear-gradient(to right, #00B4DB, #0083B0);
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: auto;
+}
+
+
+/* Modal Content */
+
+.result-container {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.result {
+    background-color: white;
+    border: 10px solid #33b5e5;
+    border-radius: 20px;
+    width: auto;
+}
+
+.result-text-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#result-text {
+    display: flex;
+    text-align: center;
+    font-size: 1.6rem;
+    border: 8px solid #0083B0;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/*
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle {
+    stroke: #4CC790;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}*/
