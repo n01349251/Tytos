@@ -728,8 +728,8 @@ tbody div img {
     position: relative;
     background-color: white;
     top: 10px;
-    height: 35px;
-    width: 35px;
+    height: 1.8rem;
+    width: 1.8rem;
     border: 0;
 }
 
@@ -740,8 +740,8 @@ tbody div img {
     position: relative;
     background-color: white;
     top: 10px;
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     border: 0;
 }
 
@@ -752,8 +752,8 @@ tbody div img {
     position: relative;
     background-color: white;
     top: 10px;
-    height: 45px;
-    width: 45px;
+    height: 3rem;
+    width: 3rem;
     border: 0;
 }
 
@@ -763,25 +763,25 @@ tbody div img {
     position: relative;
     background-color: white;
     top: 10px;
-    height: 30px;
-    width: 30px;
+    height: 1.8rem;
+    width: 1.8rem;
     border: 0;
 }
 
 .ag1,
 .ag2,
 .ag3 {
-    border: 5px solid #0d47a1
+    border: 0.28rem solid #0d47a1
 }
 
 .null {
-    border: 5px solid gainsboro;
+    border: 0.28rem solid gainsboro;
 }
 
 .dg1,
 .dg2,
 .dg3 {
-    border: 5px solid #ff4444
+    border: 0.28rem solid #ff4444
 }
 
 .ag1:hover,
@@ -830,20 +830,20 @@ tbody div img {
 #qs9,
 #qs10 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: baseline;
-    width: 70%;
-    margin: auto
+    width: 80%;
+    margin: auto;
 }
 
 .label-agree {
     color: #0d47a1;
-    font-size: 1.6em;
+    font-size: 1.5rem;
 }
 
 .label-disagree {
     color: #ff4444;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 #next-btn1,
@@ -857,8 +857,9 @@ tbody div img {
 
 .progress-container {
     display: flex;
+    flex-direction: row;
+    margin: 0;
     width: 80%;
-    background-color: gainsboro;
     margin: auto;
     border-radius: 10px;
 }
@@ -868,8 +869,9 @@ tbody div img {
     background: linear-gradient(to right, #00B4DB, #0083B0);
     border-radius: 10px;
     text-align: center;
-    color: white;
+    color: black;
     width: auto;
+    height: 5px;
 }
 
 
