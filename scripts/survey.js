@@ -52,7 +52,6 @@ function calc() {
         if (ele9[i].checked)
             var a10 = parseFloat(ele9[i].value);
     }
-
     var total = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10;
     var avg = total / 10;
 
@@ -67,7 +66,10 @@ $(function() {
     $('#s1').hide();
     $('#next-btn2').hide();
     $('.progressbar').html("0%");
-    /*$('.result-container').hide();*/
+    $('.result-container').hide();
+    $('.result').hide();
+    let total = 0;
+    let result = 0;
     $('#result').hide();
     $('#next-btn1').click(function() {
         $('.page-1').hide();
@@ -78,6 +80,8 @@ $(function() {
         document.documentElement.scrollTop = 0;
         $('.progressbar').css("width", "33.33%");
         $('.progressbar').html("33.33%");
+        $("#stroke").css({ "stroke-dasharray": 60 });
+
     });
     $('#next-btn2').click(function() {
         $('.page-1').hide();
@@ -90,6 +94,7 @@ $(function() {
         document.documentElement.scrollTop = 0;
         $('.progressbar').css("width", "66.66%");
         $('.progressbar').html("66.66%");
+
     });
     $('#s1').click(function() {
         $(".result-container").show();
@@ -101,10 +106,10 @@ $(function() {
 
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-        $('#result').show();
+        $('.result-container').show();
+        $('#result-bar').show();
 
     });
 
-    $("#stroke").css({ "stroke-dasharray": 60 });
 
 });
