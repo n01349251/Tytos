@@ -57,7 +57,8 @@ function calc() {
 
     document.getElementById("result-text").innerHTML = avg;
     document.getElementById("resultbar").style.width = avg;
-    document.getElementsByClassName("result").css.width = avg;
+    var b = document.querySelector("pie-prog");
+    b.setAttribute("data-goal", $avg);
 }
 
 $(function() {
@@ -108,7 +109,8 @@ $(function() {
         document.documentElement.scrollTop = 0;
         $('.result-container').show();
         $('#result-bar').show();
-
+        $('.result').show();
+        $('.progressbar').hide();
     });
 
 
