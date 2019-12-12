@@ -22,13 +22,13 @@
 
 <body>
     <!--Top navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top ">
 
         <!--Logo And Name Of a Website-->
-        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30" class="d-inline-block align-top mr-1" ></span>Environs</a>
+        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30" class="d-inline-block align-top mr-1"></span>Environs</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -37,8 +37,8 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Issues
-                                      </a>
+                                    Issues
+                                  </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="./global-warming-Causes.html">Global Warming</a>
                         <a class="dropdown-item" href="./acid-rain-causes">Acid Rain</a>
@@ -47,27 +47,46 @@
                         <a class="dropdown-item" href="./land-pollution-causes">Land Pollution</a>
                         <a class="dropdown-item" href="./noise-pollution">Noise Pollution</a>
                         <a class="dropdown-item" href="./ozonelayer.html">Ozone Deplation</a>
+                        <a class="dropdown-item" href="./plastic-pollution.html">Ozone Deplation</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Effects
-                                    </a>
+                                    Effects
+                                </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <a class="dropdown-item" href="./global-warming-Effects.html">Global Warming</a>
                         <a class="dropdown-item" href="./water-pollution-effects.html">Water Pollution</a>
                         <a class="dropdown-item" href="./air-pollution-main.html">Air Pollution</a>
+                        <a class="dropdown-item" href="./plastic-pollution-facts.html">Plastic Pollution</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Solutions
-                                    </a>
+                                    Solutions
+                                </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                         <a class="dropdown-item" href="./global-warming-Solutions.html">Global Warming</a>
                         <a class="dropdown-item" href="./water-pollution-solution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution.registration.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./plastic-pollution-solution.html">Water Pollution</a>
                         <a class="dropdown-item" href="./shareideas.html">Share Your Ideas</a>
                     </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="./global-warming-Solutions.html">About Us</a>
+                        <a class="dropdown-item" href="./water-pollution-solution.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./survey.html">Survey</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./signin.html">Sign In</a>
                 </li>
             </ul>
         </div>
@@ -80,7 +99,12 @@
     <!--Main Container-->
     <main>
         <div class="signin-container shadow-lg">
+
             <form id="signin-form" method="post" class="form mt-5 shadow-lg">
+                <div id="signin-title" class="display-4">
+                    <img src="./images/worldwide.png" width="30" height="30" class="d-inline-block align-top mr-1">
+                    <h4 class="display-4">Environs</h4>
+                </div>
                 <div>
                     <h4 class="display-5 blue">Sign In</h4>
                 </div>
@@ -102,10 +126,10 @@
 
     </main>
 
-    <!--Footer Container-->
+    <!---Footer Container-->
     <footer>
         <div class="ft-container">
-            <div class="ft-item">
+            <div class="ft-item" data-aos="zoom-in">
                 <div class="ft-title">Important</div>
                 <hr class="bg-light">
                 <ul>
@@ -117,7 +141,7 @@
                     <li><a href=" ">Acid Rain</a></li>
                 </ul>
             </div>
-            <div class="ft-item">
+            <div class="ft-item" data-aos="zoom-in">
                 <div class="ft-title">About Us</div>
                 <hr class="bg-light ">
                 <ul class="">
@@ -125,22 +149,22 @@
                     <li><a href=" ">Together We Can Save</a></li>
                 </ul>
             </div>
-            <div class="ft-item">
+            <div class="ft-item" data-aos="zoom-in">
                 <div class="ft-title">Contact Us</div>
                 <hr class="bg-light ">
                 <ul class="">
                     <li><a href="" class="text-italic text-underline ">togetherwecansave@gmail.com</a></li>
                 </ul>
             </div>
-            <div class="ft-item">
+            <div class="ft-item" data-aos="zoom-in">
                 <div class="ft-title">Follow Us</div>
                 <hr class="bg-light ">
                 <div class="">
                     <div class="social-media-container">
-                        <a><img alt="facebook" src="./images/facebook.svg " width="40" class="img-fluid"></a>
-                        <a><img alt="twitter" src="./images/twitter.svg " width="40" class="img-fluid"></a>
-                        <a><img alt="google plus" src="./images/google-plus.svg " width="40" class="img-fluid"></a>
-                        <a><img alt="instagram" src="./images/instagram.svg " width="40" class="img-fluid"></a>
+                        <a><img alt="facebook" src="./images/facebook.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="twitter" src="./images/twitter.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="google plus" src="./images/google-plus.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="instagram" src="./images/instagram.svg " width="40" class="sm img-fluid"></a>
                     </div>
                 </div>
             </div>
@@ -151,7 +175,11 @@
     </footer>
     <script src="./scripts/validate.js"></script>
     <script src="./scripts/local.js"></script>
-
+    <script>
+        AOS.init();
+    </script>
+    <script src="./scripts/scrollToTop.js"></script>
+    <script src="./scripts/dropdown.js"></script>
 </body>
 
 </html>
