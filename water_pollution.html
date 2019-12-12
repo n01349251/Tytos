@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Water Pollution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!--Fvicon icon-->
+    <link rel="icon" href="./images/worldwide.png">
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/water.css">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Data Aos Libraries-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <!--Top navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top ">
+
+        <!--Logo And Name Of a Website-->
+        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30" class="d-inline-block align-top mr-1"></span>Environs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Issues
+                              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./global-warming-Causes.html">Global Warming</a>
+                        <a class="dropdown-item" href="./acid-rain-causes">Acid Rain</a>
+                        <a class="dropdown-item" href="./water_pollution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-causes.html">Air Pollution</a>
+                        <a class="dropdown-item" href="./land-pollution-causes">Land Pollution</a>
+                        <a class="dropdown-item" href="./noise-pollution">Noise Pollution</a>
+                        <a class="dropdown-item" href="./ozonelayer.html">Ozone Deplation</a>
+                        <a class="dropdown-item" href="./plastic-pollution.html">Ozone Deplation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Effects
+                            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="./global-warming-Effects.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-effects.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution-main.html">Air Pollution</a>
+                        <a class="dropdown-item" href="./plastic-pollution-facts.html">Plastic Pollution</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Solutions
+                            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="./global-warming-Solutions.html">Global Warming</a>
+                        <a class="dropdown-item" href="./water-pollution-solution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./air-pollution.registration.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./plastic-pollution-solution.html">Water Pollution</a>
+                        <a class="dropdown-item" href="./shareideas.html">Share Your Ideas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About
+                                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="./global-warming-Solutions.html">About Us</a>
+                        <a class="dropdown-item" href="./water-pollution-solution.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./survey.html">Survey</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./signin.html">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--Header Content-->
+    <header>
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><img height="40px" width="40px" src="images/scroll-up.svg" alt="Scroll Image" class="img-fluid"></a>
+    </header>
+
+    <!--Main Container-->
+
+    <!--<div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/water.jpg" style="width:100%" alt="Slideshow image1" class="slide">
+                <div class="text">Save Water Save Life</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/wp2.jpg" style="width:100%" alt="Slideshow image2" class="slide">
+                <div class="text">Caption Two</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/wp3.jpg" style="width:100%" alt="Slideshow image3" class="slide">
+                <div class="text">Caption Three</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/ocean1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./images/ocean2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./images/ocean3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <br> <br><br>
+    <h1 class="display-4 center">Causes of water pollution</h1>
+    <hr>
+    <div class="wp-container1 shadow-lg">
+        <div class="wp-item1 ">
+            <img src="./images/wp4.jpg" alt="industrial waste" class="img-fluid shadow">
+        </div>
+        <div class="wp-item2">
+            <h6 class="display-4 cb">Industrial waste</h6>
+            <p class="lead">
+                Industries produce a huge amount of waste which contains toxic chemicals and pollutants which can cause air pollution and damage to us and our environment. They contain pollutants such as lead, mercury, sulfur, asbestos, nitrates, and many other harmful
+                chemicals.
+                <span id="dots">...</span><span id="more">Many 
+                industries have been able to ignore or entirely bypass pollution laws because the policies are either 
+                not valid, or not adequately enforced by pollution control boards. The result has been significant 
+                pollution that has had a direct effect on many people.</span>
+            </p>
+            <button class="btn btn-primary" id="mybtn" onclick="myFunction()">Read more</button>
+            <script src="scripts/readmore.js">
+            </script>
+        </div>
+
+    </div>
+    <div class="wp-container3 shadow-lg">
+        <div class="wp-item2">
+            <h6 class="display-4 cb">Sewage and wastewater</h6>
+            <p class="lead">
+                the sewage and wastewater that is produced by each household is chemically treated and released into the sea with fresh water. The sewage water carries harmful bacteria and chemicals that can cause serious health problems. Pathogens are known as a common
+                water pollutant; The sewers of cities house several pathogens and thereby diseases.
+                <span id="dots1">...</span>
+                <span id="more1">The resulting water pollution causes the quality of the water 
+                to deteriorate and affects aquatic ecosystems. Pollutants can also seep downand effect groundwater deposits. 
+                Saida's sewage and industrial wastes are discharged into the rivers. Because of this, pollutants enter groundwater, 
+                rivers, and other water bodies.</span>
+            </p>
+            <button class="btn btn-primary" id="mybtn1" onclick="myFunction1()">Read more</button>
+            <script src="scripts/readmore.js">
+            </script>
+        </div>
+        <div class="wp-item1">
+            <img src="./images/wp5.jpg" alt="Sewage waste image" class="img-fluid shadow">
+        </div>
+    </div>
+    <div class="wp-container2">
+        <div class="wp-item3 shadow-lg">
+            <h6 class="display-4 center cb">Oil Spills</h6>
+            <hr>
+            <img src="./images/wp6.jpg" alt="oil spill image" class="img-fluid">
+            <p class="lead">
+                Oil spill poses a huge concern as a large amount of oil enters into the sea and does not dissolve with water; thereby opens problem for local marine wildlife such as fish, birds and sea otters. For e.g.: a ship carrying a large quantity of oil may spill
+                oil if met with an accident and can cause varying damage to species in the ocean depending on the quantity of oil spill, size of the ocean, the toxicity of pollutant.<span id="dots2">...</span>
+                <span id="more2">Oil spills penetrate into the structure of the plumage of birds and the fur of mammals, reducing its insulating ability, and making 
+                them more vulnerable to temperature fluctuations and much less buoyant in the water. Cleanup and recovery from 
+                an oil spill is difficult and depends upon many factors, including the type of oil spilled, the temperature of 
+                the water (affecting evaporation and biodegradation), and the types of shorelines and beaches involved.</span>
+            </p>
+            <button class="btn btn-primary " id="mybtn2" onclick="myFunction2()">Read more</button>
+            <script src="scripts/readmore.js">
+            </script>
+
+        </div>
+        <div class="wp-item4 shadow-lg">
+            <h6 class="display-4 center cb">Nuclear waste</h6>
+            <hr>
+            <img src="./images/wp7.jpg" alt="Nuclear waste" class="img-fluid">
+            <p class="lead">
+                Nuclear energy is produced using nuclear fission or fusion. The element that is used in the production of nuclear energy is Uranium which is a highly toxic chemical. The nuclear waste that is produced by radioactive material needs to be disposed of to
+                prevent any nuclear accident. Nuclear waste can have serious environmental hazards if not disposed of properly<span id="dots3">.... Few major accidents have already taken place in Russia </span><span id="more3">
+                and Japan.
+            </span>
+            </p>
+            <button class="btn btn-primary " id="mybtn3" onclick="myFunction3()">Read more</button>
+            <script src="scripts/readmore.js">
+            </script>
+
+        </div>
+    </div>
+    <div class="wp-container4">
+        <h4 class="display-4 center">Causes And Effects Of Water Pollution</h4>
+        <hr>
+        <div class="wp-item5">
+            <video class="wp-video shadow-lg" controls>
+                <source src="./videos/Causes and effects of water pollution - Sustainability .mp4" type="video/mp4">
+                
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <br><br>
+    <!--Form Container-->
+    <h3 class="display-4 center">Share Your Ideas</h3>
+    <hr>
+    <div class="form-container mt-5">
+        <div class=""><span class="underline big">Share your ideas with us</span>
+            <p>Environment is the best gift bistowed to the human kind by nature<br> so nurturing,nurishing and fluorishing it is our sole responsibility<br> you can put up your thought you might thik can help us to protect our environment.<br> An idea can
+                really make the impressive change<br>
+                <br> Put up your innovative thoughts here ad share with us.<br> We all will work together to make our surroundings safe and livable
+                <br><br> You can also share ideas with us by sending us a mail
+                <br>
+                <span class="text-italic cursive underline color-blue">togetherwecanchange@mail.ca</span>
+                <br>
+                <br> You also can connect with us and get latest updates on<br>
+                <div class="icon-container">
+                    <div class="social-media-container2">
+                        <a><img alt="facebook" src="./images/facebook.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="twitter" src="./images/twitter.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="google plus" src="./images/google-plus.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="instagram" src="./images/instagram.svg " width="40" class="sm img-fluid"></a>
+                    </div>
+                </div>
+            </p>
+        </div><br>
+
+        <div class="rounded1 shadow-lg" data-aos="zoom-in">
+            <form class="form">
+                <h2 class="cursive">Enter Your Details</h2>
+                <br>
+                <label class="cursive">Name:</label><br>
+                <input type="text"><br><br>
+                <label class="cursive">Email:</label><br>
+                <input type="text"><br><br>
+                <label class="cursive">Write your suggestions:</label><br>
+                <input type="textarea"><br><br>
+                <label class="cursive">Choose your state:</label><br>
+                <select>
+                    <option value="0">Select state:</option>
+                    <option value="1">Ontario</option>
+                    <option value="2">Quebec</option>
+                    <option value="3">Nova Scotia</option>
+                    <option value="4">Manitoba</option>
+                    <option value="5">Saskatchewan</option>
+                    <option value="6">Alberta</option>
+                    <option value="7">Newfoundland & Labrador	</option>
+                    <option value="8"> New Brunswick</option>
+                </select><br><br>
+                <div class="btn-container">
+                    <div><input type="submit" class="btn shadow" id="submit" onclick="alertFunc()"></div>
+                    <div><input type="reset" class="btn shadow" id="reset"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br><br>
+    <!---Footer Container-->
+    <footer>
+        <div class="ft-container">
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Important</div>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href="./water_pollution.html">Water Pollution</a></li>
+                    <li><a href=" ">Air Pollution</a></li>
+                    <li><a href=" ">Land Pollution</a></li>
+                    <li><a href=" ">Deforestration</a></li>
+                    <li><a href=" ">Ozone Layer Depletion</a></li>
+                    <li><a href=" ">Acid Rain</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">About Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <li><a href=" ">Our Aim</a></li>
+                    <li><a href=" ">Together We Can Save</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Contact Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <li><a href="" class="text-italic text-underline ">togetherwecansave@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Follow Us</div>
+                <hr class="bg-light ">
+                <div class="">
+                    <div class="social-media-container">
+                        <a><img alt="facebook" src="./images/facebook.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="twitter" src="./images/twitter.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="google plus" src="./images/google-plus.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="instagram" src="./images/instagram.svg " width="40" class="sm img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cp-right">
+            <div class="display-6 blue"><a id="cp-right">&copy;www.tytos.org</a></div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    AOS.init();
+</script>
+<script src="./scripts/slideshow.js"></script>
+<script src="./scripts/scrollToTop.js"></script>
+<script src="./scripts/alert.js"></script>
+
+</html>
