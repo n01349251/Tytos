@@ -600,6 +600,12 @@ td {
 
 /*Sign In Form*/
 
+#signin-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 .signin-container {
     display: flex;
     margin: auto;
@@ -891,6 +897,13 @@ tbody div img {
     text-align: center;
     color: white;
     width: auto;
+    animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 
@@ -910,9 +923,12 @@ tbody div img {
 
 .result {
     background-color: white;
-    border: 10px solid #33b5e5;
     border-radius: 20px;
-    width: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .result-text-container {
@@ -936,24 +952,28 @@ tbody div img {
 }
 
 
-/*
-.circular-chart {
-    display: block;
+/*Pie Progress*/
+
+.pie_progress {
+    width: 160px;
     margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
 }
 
-.circle {
-    stroke: #4CC790;
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-    animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-    0% {
-        stroke-dasharray: 0 100;
+@media all and (max-width: 768px) {
+    .pie_progress {
+        width: 80%;
+        max-width: 300px;
     }
-}*/
+}
+
+.pie_progress {}
+
+.pie_progress :hover {
+    transform: scale(1.1);
+}
+
+#pie-prog {}
+
+#pie-prog .pie_progress__number {
+    text-align: center;
+}
