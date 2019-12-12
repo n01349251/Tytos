@@ -21,13 +21,13 @@
 
 <body>
     <!--Top navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light scrolling-navbar double-nav sticky-top ">
 
         <!--Logo And Name Of a Website-->
-        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30" class="d-inline-block align-top mr-1" ></span>Environs</a>
+        <a class="navbar-brand" href="./Home.html"><span><img alt="logo" src="./images/logo1.svg" width="30" height="30" class="d-inline-block align-top mr-1"></span>Environs</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -36,8 +36,8 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Issues
-                                      </a>
+                                    Issues
+                                  </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="./global-warming-Causes.html">Global Warming</a>
                         <a class="dropdown-item" href="./acid-rain-causes">Acid Rain</a>
@@ -50,8 +50,8 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Effects
-                                    </a>
+                                    Effects
+                                </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <a class="dropdown-item" href="./global-warming-Effects.html">Global Warming</a>
                         <a class="dropdown-item" href="./water-pollution-effects.html">Water Pollution</a>
@@ -60,26 +60,37 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Solutions
-                                    </a>
+                                    Solutions
+                                </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                         <a class="dropdown-item" href="./global-warming-Solutions.html">Global Warming</a>
                         <a class="dropdown-item" href="./water-pollution-solution.html">Water Pollution</a>
                         <a class="dropdown-item" href="./shareideas.html">Share Your Ideas</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " onclick="myFunction()" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="./global-warming-Solutions.html">About Us</a>
+                        <a class="dropdown-item" href="./water-pollution-solution.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./signin.html">Sign In</a>
+                </li>
             </ul>
         </div>
     </nav>
-
     <!--Header Content-->
     <header>
         <a onclick="topFunction()" id="myBtn" title="Go to top"><img height="40" width="40" src="images/scroll-up.svg" class="img-fluid" alt="scroll top"></a>
     </header>
 
     <!--Main Container-->
-    <div class="progress-container mt-5 shadow">
-        <div class="progressbar"></div>
+    <div class="progress-container mt-5">
+        <div class="progressbar shadow"></div>
     </div>
     <div class="survey-container shadow-lg" style="text-align:center;" id="test">
 
@@ -285,8 +296,8 @@
 
             <br><br>
             <div class="survey-btns">
-                <input type="button" value="next" id="next-btn1" class="btn btn-primary">
-                <input type="button" value="next" id="next-btn2" class="btn btn-primary">
+                <input type="button" value="Next" id="next-btn1" class="btn btn-primary">
+                <input type="button" value="Next" id="next-btn2" class="btn btn-primary">
                 <input type="button" value="submit" id="s1" onclick="calc()" class="btn btn-success">
 
             </div>
@@ -294,23 +305,126 @@
 
     </div>
     <br>
-    <!--
-    <svg viewBox="0 0 36 36" class="circular-chart" id="result">
-            <path class="circle"
-              stroke-dasharray="60, 100" id="stroke"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-    </svg>-->
-    <div class="result-container mt-5 shadow-lg">
-
-        <div class="result-text-container" class="display-4">
-            <h4 class="display-4 blue">Your Score Is</h4>
-            <div id="result-text"></div>
+    <div class="result shadow-lg">
+        <div class="result-label mt-5">
+            <h4 class="display-4 center mt-5">Your Score</h4>
         </div>
+        <div class="pie_progress mb-5" role="progressbar" id="pie-prog">
+            <div class="pie_progress__number">0%</div>
+        </div>
+
+        <script type="text/javascript" src="./scripts/jquery.js"></script>
+        <script type="text/javascript" src="./scripts/jquery-asPieProgress.js"></script>
+        <script type="text/javascript">
+            jQuery(function($) {
+                $('.pie_progress').asPieProgress({
+                    namespace: 'pie_progress'
+                });
+                // Example with grater loading time - loads longer
+                $('.pie_progress--slow').asPieProgress({
+                    namespace: 'pie_progress',
+                    goal: 1000,
+                    min: 0,
+                    max: 1000,
+                    speed: 200,
+                    easing: 'linear'
+                });
+                // Example with grater loading time - loads longer
+                $('.pie_progress--countdown').asPieProgress({
+                    namespace: 'pie_progress',
+                    easing: 'linear',
+                    first: 120,
+                    max: 120,
+                    goal: 0,
+                    speed: 1200, // 120 s * 1000 ms per s / 100
+                    numberCallback: function(n) {
+                        var minutes = Math.floor(this.now / 60);
+                        var seconds = this.now % 60;
+                        if (seconds < 10) {
+                            seconds = '0' + seconds;
+                        }
+                        return minutes + ': ' + seconds;
+                    }
+                });
+                var avg = 10;
+                $('#s1').on('click', function() {
+                    $('.pie_progress').asPieProgress('start');
+                });
+                $('#button_finish').on('click', function() {
+                    $('.pie_progress').asPieProgress('finish');
+                });
+                $('#button_go').on('click', function() {
+                    $('.pie_progress').asPieProgress('go', avg);
+                });
+                $('#button_go_percentage').on('click', function() {
+                    $('.pie_progress').asPieProgress('go', '50%');
+                });
+                $('#button_stop').on('click', function() {
+                    $('.pie_progress').asPieProgress('stop');
+                });
+                $('#button_reset').on('click', function() {
+                    $('.pie_progress').asPieProgress('reset');
+                });
+            });
+        </script>
     </div>
-    <!--Scripts-->
-    <script src="./scripts/survey.js"></script>
+    <br>
+    <!---Footer Container-->
+    <footer>
+        <div class="ft-container">
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Important</div>
+                <hr class="bg-light">
+                <ul>
+                    <li><a href="./water_pollution.html">Water Pollution</a></li>
+                    <li><a href=" ">Air Pollution</a></li>
+                    <li><a href=" ">Land Pollution</a></li>
+                    <li><a href=" ">Deforestration</a></li>
+                    <li><a href=" ">Ozone Layer Depletion</a></li>
+                    <li><a href=" ">Acid Rain</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">About Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <li><a href=" ">Our Aim</a></li>
+                    <li><a href=" ">Together We Can Save</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Contact Us</div>
+                <hr class="bg-light ">
+                <ul class="">
+                    <li><a href="" class="text-italic text-underline ">togetherwecansave@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="ft-item" data-aos="zoom-in">
+                <div class="ft-title">Follow Us</div>
+                <hr class="bg-light ">
+                <div class="">
+                    <div class="social-media-container">
+                        <a><img alt="facebook" src="./images/facebook.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="twitter" src="./images/twitter.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="google plus" src="./images/google-plus.svg " width="40" class="sm img-fluid"></a>
+                        <a><img alt="instagram" src="./images/instagram.svg " width="40" class="sm img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cp-right">
+            <div class="display-6 blue"><a id="cp-right">&copy;www.tytos.org</a></div>
+        </div>
+    </footer>
 </body>
+<!--Scripts-->
+<script src="./scripts/survey.js"></script>
+
+<script src="./scripts/scrollToTop.js"></script>
+<script src="./scripts/dropdown.js"></script>
+<script src="./scripts/openpage.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </html>
