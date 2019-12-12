@@ -17,6 +17,24 @@
             "name": "Adit",
             "email": "a@123.com",
             "idea": "Focus on a Solar energy"
+        },
+        {
+            "img": "/images/user.png",
+            "name": "Vidhi",
+            "email": "v@123.com",
+            "idea": "Grow more trees for clean environment"
+        },
+        {
+            "img": "/images/user.png",
+            "name": "Vidhi",
+            "email": "v@123.com",
+            "idea": "Grow more trees for clean environment"
+        },
+        {
+            "img": "/images/user.png",
+            "name": "Vidhi",
+            "email": "v@123.com",
+            "idea": "Grow more trees for clean environment"
         }
     ]
 }
