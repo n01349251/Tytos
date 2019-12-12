@@ -165,7 +165,29 @@
     </script>
     <script src="./scripts/scrollToTop.js"></script>
     <script src="./scripts/dropdown.js"></script>
-    <script src="./scripts/ideas.js"></script>
+    <script>
+            $(function() {
+
+
+            var people = [];
+
+            $.getJSON('./scripts/people.json', function(data) {
+                $.each(data.person, function(i, f) {
+                    var tblRow =
+                        "<div>" +
+                        "<span1>" + "<img src=" + f.img + ">" +
+                        "<h4>" + f.name + "</h4>" + "</span1>" +
+                        "<span2>" +
+                        "<h5>" + f.email + "</h5>" +
+                        "<idea>" + f.idea + "</idea>" + "</span2>" +
+                        "</div>" +
+                        "<hr>"
+                    $(tblRow).appendTo("#userdata tbody");
+                });
+
+            });
+
+        });</script>
     <script src="./scripts/scrollToTop.js"></script>
 
 </body>
