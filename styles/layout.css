@@ -969,7 +969,7 @@ tbody div img {
 .pie_progress {}
 
 .pie_progress :hover {
-    transform: scale(1.1);
+    
 }
 
 #pie-prog {}
