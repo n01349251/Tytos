@@ -26,6 +26,10 @@ ________________________________________________________________________________
 * Openpage.js
 * Survey.js
 * ScrollToTop.js
+* jquery.js
+* jquery-asPieProgress.js
+* plugin.js
+* aos.js
 #### openpage.js
 When the mouse hovers on type of pollution cards it scales the card and when the card is clicked it leads to the perticular pollution page
 #### Opens a page
@@ -102,6 +106,24 @@ $(function() {
     });
 
     $("#stroke").css({ "stroke-dasharray": 60 });
+
+});
+```
+#### plugin.js,jquery.js,jquery-asPieProgress.js
+These are the external jquery plugins which are used to show the result as pie chart which animates the chart on submission of the survey form
+#### aos.js
+AOS libraries we have used to animate div on scroll. so just to change animating effect for mobile devices we are getting device width using jquery and removing html attributes using removeAttr() method and adding new value for data-aos attribute using attr() method.
+```javascript
+$(document).ready(function() {
+
+    if ($(document).width() < 768) {
+        $('.card3').removeAttr("data-aos", "flip-right");
+        $('.card3').attr("data-aos", "fade-right");
+
+    } else if ($(document).width() > 768) {
+        $('.card3').removeAttr("data-aos", "fade-right");
+        $('.card3').attr("data-aos", "flip-right");
+    }
 
 });
 ```
