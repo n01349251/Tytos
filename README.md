@@ -109,7 +109,7 @@ $(function() {
 
 });
 ```
-![Image of Yaktocat](https://github.com/n01349251/Tytos/blob/master/images/acid-rain.png)
+
 
 #### plugin.js,jquery.js,jquery-asPieProgress.js
 These are the external jquery plugins which are used to show the result as pie chart which animates the chart on submission of the survey form
